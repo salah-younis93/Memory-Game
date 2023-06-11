@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Kablammo', cursive;
+  font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(to left top, #7f00c6, #c700a1, #ef0073, #ff0043, #ff0000);
+}
+.control-buttons {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-image: linear-gradient(to left top, #7f00c6de, #c700a1de, #ef0073e6, #ff0043d1, #ff0000e3);
+}
+.control-buttons span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to left top, #7f00c6, #c700a1, #ef0073, #ff0043, #ff0000);
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+}
+.Winning-buttons {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-image: linear-gradient(to left top, #7f00c6de, #c700a1de, #ef0073e6, #ff0043d1, #ff0000e3);
+  display: none;
+}
+
+.Winning-buttons span {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to left top, #7f00c6, #c700a1, #ef0073, #ff0043, #ff0000);
+  color: #fff;
+  padding: 15px 25px 30px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+}
+.Winning-buttons span.celebrate {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to left top, #7f00c6, #c700a1, #ef0073, #ff0043, #ff0000);
+  color: #fff;
+  padding: 15px 25px 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+.Winning-buttons span.celebrate img {
+  width: 800px;
+}
+.Winning-buttons span lord-icon {
+  width: 50px;
+  height: 50px;
+  top: 15px;
+}
+.created {
+  position: absolute;
+  left: 35%;
+  top: 60%;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.info-container {
+  width: 1080px;
+  font-weight: bold;
+  margin: 20px auto 0;
+  background-image: linear-gradient(to left, #9d26b7, #8e1eb7, #7d18b7, #6913b8, #5210b8, #6e05b0, #8300a8, #9300a1, #bc008e, #da0076, #ee005c, #f90d41);
+  padding: 20px;
+  font-size: 28px;
+  overflow: hidden;
+  border: 1px solid #9F12EB;
+  border-radius: 18px;
+}
+.info-container .name {
+  color: #5b0fd6ce;
+  float: left;
+  width: 50%;
+}
+.info-container .tries {
+  color: #d60f0f;
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+.memory-game-blocks {
+  display: flex;
+  width: 1100px;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+.memory-game-blocks.no-clicking {
+  pointer-events: none;
+}
+.memory-game-blocks .game-block {
+  height: 200px;
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  flex: 1 0 200px;
+  margin: 0 10px 20px;
+}
+.memory-game-blocks .game-block .front {
+  background-color: #333;
+  line-height: 200px;
+}
+.memory-game-blocks .game-block .front::before {
+  content: "?";
+  color: #fff;
+  font-size: 140px;
+  font-weight: bold;
+}
+.memory-game-blocks .game-block .back {
+  background-color: #9F12EB;
+  transform: rotateY(180deg);
+}
+.memory-game-blocks .game-block .back lord-icon {
+  width: 140px;
+  height: 140px;
+  margin-top: 30px;
+}
+.memory-game-blocks .game-block .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  border: 5px solid #9F12EB;
+}
+.memory-game-blocks .game-block.is-flipped,
+.memory-game-blocks .game-block.is-matched {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}

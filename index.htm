@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  <title>Memory Game</title>
+</head>
+<body>
+  <div class="control-buttons">
+    <span>Start Game</span>
+  </div>
+  
+  <div class="info-container">
+    <div class="name">
+      Hello: <span></span>
+    </div>
+    <div class="tries">
+      Wrong Tries: <span>0</span>
+    </div>
+  </div>
+  <div class="memory-game-blocks">
+    <!-----------Duck----------------->
+    <div class="game-block" data-animal="duck">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/wiqmayhq.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#ffc738,secondary:#92140c"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <div class="game-block" data-animal="duck">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/wiqmayhq.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#ffc738,secondary:#92140c"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <!-----------Wood Picker----------------->
+    <div class="game-block" data-animal="woodpicker">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/durjjpcn.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#3a3347,secondary:#ebe6ef"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <div class="game-block" data-animal="woodpicker">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/durjjpcn.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#3a3347,secondary:#ebe6ef"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <!-----------Turkey----------------->
+    <div class="game-block" data-animal="turkey">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/twwkzpto.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#b26836,secondary:#f24c00"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <div class="game-block" data-animal="turkey">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/twwkzpto.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#b26836,secondary:#f24c00"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <!-----------bee----------------->
+    <div class="game-block" data-animal="bee">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/qjdnqpiz.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#ffc738,secondary:#3a3347,tertiary:#ebe6ef"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <div class="game-block" data-animal="bee">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/qjdnqpiz.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#ffc738,secondary:#3a3347,tertiary:#ebe6ef"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <!-----------horse----------------->
+    <div class="game-block" data-animal="horse">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/ysnocpmg.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#b26836"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <div class="game-block" data-animal="horse">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/ysnocpmg.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#b26836"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <!-----------spider----------------->
+    <div class="game-block" data-animal="spider">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/nlmybhvb.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#3a3347"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <div class="game-block" data-animal="spider">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/nlmybhvb.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#3a3347"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <!-----------cat----------------->
+    <div class="game-block" data-animal="cat">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/tohoduub.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#646e78,secondary:#3a3347"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <div class="game-block" data-animal="cat">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/tohoduub.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#646e78,secondary:#3a3347"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <!-----------bear----------------->
+    <div class="game-block" data-animal="bear">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/ytdssnsw.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#b26836"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <div class="game-block" data-animal="bear">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/ytdssnsw.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#b26836"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <!-----------squirel----------------->
+    <div class="game-block" data-animal="squirel">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/ufthrhai.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#b26836"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <div class="game-block" data-animal="squirel">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/ufthrhai.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#b26836"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <!-----------snake----------------->
+    <div class="game-block" data-animal="snake">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/emzrtjck.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#08a88a"
+            >
+        </lord-icon>
+      </div>
+    </div>
+    <div class="game-block" data-animal="snake">
+      <div class="face front"></div>
+      <div class="face back">
+        <lord-icon
+            src="https://cdn.lordicon.com/emzrtjck.json"
+            trigger="loop"
+            colors="outline:#121331,primary:#08a88a"
+            >
+        </lord-icon>
+      </div>
+    </div>
+  </div>
+  <div class="Winning-buttons">
+    <span class="celebrate"><img src="img/Fk8Y.gif" alt=""></span>
+    <div class="created">Designed & Developed By Salah Younis</div>
+    <span class="try-again">Try Again
+      <lord-icon
+          src="https://cdn.lordicon.com/zmkotitn.json"
+          trigger="loop"
+          colors="primary:#ffffff"
+          state="hover-1">
+      </lord-icon>
+    </span> 
+  </div>
+  <audio src="audio/yay-6120.mp3" id="success" preload="auto"></audio>
+  <audio src="audio/failure-drum-sound-effect-1-46093.mp3" preload="auto" id="fail"></audio>
+  <audio src="audio/crowd-cheering-143103.mp3" preload="auto" id="celebration"></audio>
+  <script src="js/main.js"></script>
+</body>
+</html>
